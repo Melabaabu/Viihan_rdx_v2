@@ -32,7 +32,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
      return api.sendMessage("Hug me baby ☺️", threadID);
    };
 
-   if ((event.body.toLowerCase() == "sim") || (event.body.toLowerCase() == "simsimi")) {
+     if ((event.body.toLowerCase() == "sim") || (event.body.toLowerCase() == "simsimi")) {
      return api.sendMessage("Prefix Kon Lagayega? Pehle Prefix Lagao Fir Likho Sim", threadID);
    };
   
@@ -44,10 +44,115 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
      return api.sendMessage("Ye Bc Kya HoTa Hai 🤔 ", threadID);
    };
 
+if ([
+    "assalamualaikum", 
+    "assalam alaikum", 
+    "aoa", 
+    "a.o.a", 
+    "asalam o alaikum", 
+    "asalamualaikum", 
+    "asalam alikum", 
+    "assalamu alaikum", 
+    "assalamu-alaikum", 
+    "asalam wa alaikum", 
+    "asslamualaikum", 
+    "asslam o alaikum", 
+    "aslam alaikum", 
+    "asalamo alaikum", 
+    "assalam o alaikum", 
+    "assalamo alaikum", 
+    "slm", 
+    "slam", 
+    "slamo alikum", 
+    "salaam alaikum", 
+    "asslam.o.alaikum", 
+    "a.s.s.a.l.a.m", 
+    "aslaam o alikum", 
+    "aslam.o.alaikum", 
+    "assalamwalykum", 
+    "asslam.walikum", 
+    "assalam alaykum", 
+    "assalam.walaikum", 
+    "a-s-s-a-l-a-m", 
+    "slms"
+].includes(event.body.toLowerCase())) {
+    return api.sendMessage("وَعَلَيْكُمُ ٱلسَّلَامُ وَرَحْمَةُ ٱللَّهِ وَبَرَكاتُهُ", threadID);
+}  
    if ((event.body.toLowerCase() == "lol") || (event.body.toLowerCase() == "lol bot")) {
      return api.sendMessage("Khud ko Kya LeGend Samjhte Ho 😂", threadID);
    };
-
+if ([
+    "good evening", 
+    "evening", 
+    "gd evening", 
+    "gud evening", 
+    "ge", 
+    "g.e", 
+    "evenin"
+].includes(event.body.toLowerCase())) {
+    return api.sendMessage("Good Evening! I hope you’re having a wonderful time.", threadID);
+}
+  if ([
+    "i love you bot", 
+    "bot i love you", 
+    "i love you"
+].includes(event.body.toLowerCase())) {
+    return api.sendMessage("Yaar, Mujhe aisi baatein nahi pasand. Main buhat shreef hoon. Haan, mera owner single hai, bolo to number tak de sakta hoon. 😁", threadID);
+  }
+ if ([
+    "bot i miss you", 
+    "i miss you bot", 
+    "miss you"
+].includes(event.body.toLowerCase())) {
+    return api.sendMessage("Hyeee, I miss you too! SuChi kia karun, ID issue aa jata hai is liye mujhe new ID banne ka wait karna padta hai. Jab new ID banti hai, to owner mujhe add kar deta hai. 😅", threadID);
+}
+ if ([
+    "bot kis na add kiya", 
+    "bot kisne add kiya", 
+    "bot kis ne add kiya", 
+    "bot ko kisne add kiya",
+    "bot ko kis ne add kiya", 
+    "bot add kisne kiya", 
+    "kisne bot ko add kiya", 
+    "kis na bot ko add kiya", 
+    "bot ko kisne add kiya", 
+    "bot kis ne add kiya?"
+].some(phrase => event.body.toLowerCase().includes(phrase))) {
+    return api.sendMessage("Kio kia howa, add ho gaya so ho gaya. Ma ap ko kia taqleef hy jnab 👻. Waisay ap bhi khelo na, bot bot! 😄 Mera owner single hai, bolo to number tak de sakta hoon! 😁", threadID);
+ }
+  
+  if ([
+    "how are you", 
+    "how r u", 
+    "how are u", 
+    "how's it going", 
+    "kese ho", 
+    "kese hain", 
+    "kese ho ap", 
+    "ap kese ho", 
+    "ap kaise ho", 
+    "kaise hain aap", 
+    "kaise ho", 
+    "how do you do", 
+    "what's up", 
+    "sup", 
+    "kya haal hain", 
+    "kya hal hain", 
+    "hal chal", 
+    "hal kya hai", 
+    "kya chal raha hai", 
+    "kya scene hai", 
+    "what's going on", 
+    "kya ho raha hai", 
+    "kaise ho tum", 
+    "tum kaise ho", 
+    "kya haal he"
+].includes(event.body.toLowerCase())) {
+    return api.sendMessage("Main theek hoon, aap kaise hain? Umeed karta hoon ke aap ka din acha guzray ga.", threadID);
+  }
+  if ((event.body.toLowerCase() == "morning") || (event.body.toLowerCase() == "good morning")) {
+    return api.sendMessage("Good Morning! 🌞 بہت خوش آمدید! 🙌 امید کرتا ہوں کہ آپ کا دن خوشگوار گزرے، اللہ پاک آپ کو ہر برائی سے بچائے، آپ کو اپنی حفظ و امان میں رکھے، اور کبھی کسی کا محتاج نہ کرے! آمین! 🤲💫💕💪🌻☕✨", threadID);
+}
    if ((event.body.toLowerCase() == "morning") || (event.body.toLowerCase() == "good morning")) {
      return api.sendMessage("Ꮆɵɵɗ Ɱ❍ɽƞɪɪƞɠ Ɛⱱɛɽɣ❍ƞɛ🌅, Ƭɽɣ ꌗɵɱɛ Cɵffɛɛ ❍ɽ Ƭɛɑ Ƭ❍ Ꮗɑҡɛ Uƥ☕✨💫", threadID);
    };
@@ -63,15 +168,15 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
    };
 
    if ((event.body.toLowerCase() == "owner") || (event.body.toLowerCase() == "Owner")) {
-     return api.sendMessage("💝🥀𝐎𝐖𝐍𝐄𝐑:- ☞𝕻𝖗𝖎𝖞𝖆𝖓𝖘𝖍 𝕽𝖆𝖏𝖕𝖚𝖙☜ 💫\n🖤𝚈𝚘𝚞 𝙲𝚊𝚗 𝙲𝚊𝚕𝚕 𝙷𝚒𝚖 ℙ𝕣𝕚𝕪𝕒𝕟𝕤𝕙🖤\n😳𝐇𝐢𝐬 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝🤓:- ☞ www.facebook.com/priyanshu.rajput.official\n👋For Any Kind Of Help Contact On Telegram  Username 👉 @Priyanshrajput😇", threadID);
+     return api.sendMessage("💝🥀𝐎𝐖𝐍𝐄𝐑:- ☞꧁𝐙𝐚𝐢𝐧𝐢-𝐉𝐮𝐭𝐭꧂☜ 💫\n🖤𝚈𝚘𝚞 𝙲𝚊𝚗 𝙲𝚊𝚕𝚕 𝙷𝚒𝚖 ℤ𝔸𝕀ℕ ℙℝ𝕀ℕℂ𝔼🖤\n😳𝐇𝐢𝐬 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝🤓:- ☞https://www.facebook.com/profile.php?id=100086033644262&mibextid=ZbWKwL \n👋For Any Kind Of Help Contact On Telegram  Username 👉 @zainijutt7😇", threadID);
    };
 
    if ((event.body.toLowerCase() == "tumhe banaya kon hai") || (event.body.toLowerCase() == "tumko banaya kisne")) {
-     return api.sendMessage("Priyansh  ❤️ My Creator. He loves me & Edit Me Daily. Ye Bot Sirf Owner k Liye h. Mujhe Aap logo ko Hasane k liye banya gya h Toh Muh Ladkaye Mat Rakkha Karo. Har Waqt Haste Raho.", threadID);
+     return api.sendMessage("Zaini jutt  ❤️ My Creator. He loves me & Edit Me Daily. Ye Bot Sirf Owner k Liye h. Mujhe Aap logo ko Hasane k liye banya gya h Toh Muh Ladkaye Mat Rakkha Karo. Har Waqt Haste Raho.", threadID);
    };
 
   if ((event.body.toLowerCase() == "bot admin") || (event.body.toLowerCase() == "bot ka admin kon ha")) {
-     return api.sendMessage("He is Priyansh. He Gives his name Priyansh everywhare", threadID);
+     return api.sendMessage("He is zain. He Gives his name zain everywhare", threadID);
    };
 
    if ((event.body.toLowerCase() == "shadi karoge") || (event.body.toLowerCase() == "mujhse shadi karoge?")) {
@@ -227,16 +332,555 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
      return api.sendMessage("🏔️🏝️Priyansh Ƞɛ ꌗƥɛçɪɑɭɭɣ Ƭuɱ 🌊🪺Jɑɪʂɛ Ƭɧɑɽƙɪɣɵ Ƙɛ Ɬɪɣɛ•• 🏞️🌬️Ɣɑɧ çɵɱɱɑƞɗ Ɦɑʈɑ Ɗɪɣɑ Ɦɑɪ↗↘ Sɵɽɽɣ Ɠɣuʂ••😹🫶", threadID);
    };
 
-  if ((event.body.toLowerCase() == "ami priyansh") || (event.body.toLowerCase() == "ami diya") || (event.body.toLowerCase() == "main amrita") || (event.body.toLowerCase() == "main priyansh") || (event.body.toLowerCase() == "main diya")) {
-     return api.sendMessage("🕊️🍎...Aɭɛ Ɱɛɹɛ Ɓɑɓɣ Ƙɛʂɛ Ɦɵ ɑɑp😚🍒", threadID);
-   };
+  if ((event.body.toLowerCase() == "😵‍💫")) {
+    return api.sendMessage("Lagta hai chakkar aa gaye 😵‍💫", threadID);
+};
+
+if ((event.body.toLowerCase() == "🤤")) {
+    return api.sendMessage("Kya dekh ke muh se paani aa gaya? 🤤", threadID);
+};
+
+if ((event.body.toLowerCase() == "😚")) {
+    return api.sendMessage("Awww! Flying kiss de diya 😚", threadID);
+};
+
+if ((event.body.toLowerCase() == "🤩")) {
+    return api.sendMessage("Wow! Kisi cheez ka shock laga kya? 🤩", threadID);
+};
+
+if ((event.body.toLowerCase() == "😜")) {
+    return api.sendMessage("Bade masti ke mood mein ho lagta hai! 😜", threadID);
+};
+
+if ((event.body.toLowerCase() == "🫣")) {
+    return api.sendMessage("Kahi chhup ke dekh rhe ho kya? 🫣", threadID);
+};
+
+if ((event.body.toLowerCase() == "😮‍💨")) {
+    return api.sendMessage("Thak gaye ho? Relax kar lo 😮‍💨", threadID);
+};
+
+if ((event.body.toLowerCase() == "🤓")) {
+    return api.sendMessage("Scholar lag rahe ho 🤓", threadID);
+};
+
+if ((event.body.toLowerCase() == "🥶")) {
+    return api.sendMessage("Bahut thand lag rahi hai kya? 🥶", threadID);
+};
+
+if ((event.body.toLowerCase() == "🥵")) {
+    return api.sendMessage("Garmi ke maare pareshan lag rahe ho 🥵", threadID);
+};
+
+if ((event.body.toLowerCase() == "🫡")) {
+    return api.sendMessage("Salute kar rahe ho kya? 🫡", threadID);
+};
+
+if ((event.body.toLowerCase() == "🫶")) {
+    return api.sendMessage("Itna pyaar de rahe ho? 🫶", threadID);
+};
+
+if ((event.body.toLowerCase() == "👩‍💻") || (event.body.toLowerCase() == "👨‍💻")) {
+    return api.sendMessage("Lagta hai coding ho rahi hai 👨‍💻", threadID);
+};
+
+if ((event.body.toLowerCase() == "🕺") || (event.body.toLowerCase() == "💃")) {
+    return api.sendMessage("Dance kar rahe ho? Mazze le rahe ho! 🕺💃", threadID);
+};
+
+if ((event.body.toLowerCase() == "🎤")) {
+    return api.sendMessage("Gaana suna rahe ho? 🎤", threadID);
+};
+
+if ((event.body.toLowerCase() == "📖")) {
+    return api.sendMessage("Kya padhai kar rahe ho? 📖", threadID);
+};
+
+if ((event.body.toLowerCase() == "🛌")) {
+    return api.sendMessage("Sone ka time ho gaya? 🛌", threadID);
+};
+
+if ((event.body.toLowerCase() == "👑")) {
+    return api.sendMessage("Aap toh King/Queen lag rahe ho! 👑", threadID);
+};
+
+  if ((event.body.toLowerCase() == "😎")) {
+    return api.sendMessage("Aap toh bilkul cool lag rahe ho 😎", threadID);
+};
+
+if ((event.body.toLowerCase() == "🤩")) {
+    return api.sendMessage("Kuch acha dekh liya kya? 🤩", threadID);
+};
+
+if ((event.body.toLowerCase() == "👀")) {
+    return api.sendMessage("Kya dekh rahe ho? 👀", threadID);
+};
+
+if ((event.body.toLowerCase() == "💀")) {
+    return api.sendMessage("Lagta hai kuch funny dekh liya! 💀", threadID);
+};
+
+if ((event.body.toLowerCase() == "🥳")) {
+    return api.sendMessage("Party ka mood lag raha hai! 🥳", threadID);
+};
+
+if ((event.body.toLowerCase() == "🧐")) {
+    return api.sendMessage("Lagta hai koi mushkil sawaal puch rahe ho 🧐", threadID);
+};
+
+if ((event.body.toLowerCase() == "💡")) {
+    return api.sendMessage("Aapke paas koi nayi idea hai? 💡", threadID);
+};
+
+if ((event.body.toLowerCase() == "🚶‍♂️") || (event.body.toLowerCase() == "🚶‍♀️")) {
+    return api.sendMessage("Kahaan ja rahe ho? 🚶‍♂️", threadID);
+};
+
+if ((event.body.toLowerCase() == "🔮")) {
+    return api.sendMessage("Kya future dekh rahe ho? 🔮", threadID);
+};
+
+if ((event.body.toLowerCase() == "🔥")) {
+    return api.sendMessage("Lagta hai sab kuch garam hai! 🔥", threadID);
+};
+
+if ((event.body.toLowerCase() == "🎉")) {
+    return api.sendMessage("Celebration ka mood lag raha hai! 🎉", threadID);
+};
+
+if ((event.body.toLowerCase() == "💪")) {
+    return api.sendMessage("Shakti dikhane ka time hai! 💪", threadID);
+};
+
+if ((event.body.toLowerCase() == "🤯")) {
+    return api.sendMessage("Dimag ka dahi ho gaya? 🤯", threadID);
+};
+
+if ((event.body.toLowerCase() == "🍕")) {
+    return api.sendMessage("Kya pizza khane ka man hai? 🍕", threadID);
+};
+
+if ((event.body.toLowerCase() == "🏆")) {
+    return api.sendMessage("Aap toh champion lag rahe ho! 🏆", threadID);
+};
+
+if ((event.body.toLowerCase() == "🍀")) {
+    return api.sendMessage("Lagta hai apne paas kuch lucky charm hai! 🍀", threadID);
+};
+
+if ((event.body.toLowerCase() == "🎧")) {
+    return api.sendMessage("Koi music sun rahe ho? 🎧", threadID);
+};
+
+if ((event.body.toLowerCase() == "🧠")) {
+    return api.sendMessage("Aapka dimag bohot tez lag raha hai 🧠", threadID);
+};
+
+if ((event.body.toLowerCase() == "💫")) {
+    return api.sendMessage("Aapke aas paas kuch magic lag raha hai 💫", threadID);
+};
+
+if ((event.body.toLowerCase() == "🦸‍♂️") || (event.body.toLowerCase() == "🦸‍♀️")) {
+    return api.sendMessage("Superhero lag rahe ho! 🦸‍♂️", threadID);
+};
+
+  if ((event.body.toLowerCase() == "🤡")) {
+    return api.sendMessage("Lagta hai aap clown ban gaye ho 🤡", threadID);
+};
+
+if ((event.body.toLowerCase() == "🦄")) {
+    return api.sendMessage("Aap toh unicorn lag rahe ho! 🦄", threadID);
+};
+
+if ((event.body.toLowerCase() == "🎮")) {
+    return api.sendMessage("Kya game khel rahe ho? 🎮", threadID);
+};
+
+if ((event.body.toLowerCase() == "👻")) {
+    return api.sendMessage("Bhoot lag rahe ho kya? 👻", threadID);
+};
+
+if ((event.body.toLowerCase() == "🦋")) {
+    return api.sendMessage("Aap toh butterfly jaise khubsurat ho! 🦋", threadID);
+};
+
+if ((event.body.toLowerCase() == "🍉")) {
+    return api.sendMessage("Lagta hai aapko fruits ka shauq hai! 🍉", threadID);
+};
+
+if ((event.body.toLowerCase() == "🛸")) {
+    return api.sendMessage("Aap spaceship par hai? 🛸", threadID);
+};
+
+if ((event.body.toLowerCase() == "🍄")) {
+    return api.sendMessage("Lagta hai aapke paas magical powers hain 🍄", threadID);
+};
+
+if ((event.body.toLowerCase() == "🚀")) {
+    return api.sendMessage("Aap toh space mein ja rahe ho! 🚀", threadID);
+};
+
+if ((event.body.toLowerCase() == "🍩")) {
+    return api.sendMessage("Kya donuts ka shauq hai? 🍩", threadID);
+};
+
+if ((event.body.toLowerCase() == "🛹")) {
+    return api.sendMessage("Aap skateboard par hai! 🛹", threadID);
+};
+
+if ((event.body.toLowerCase() == "🌮")) {
+    return api.sendMessage("Tacos ka man ho raha hai! 🌮", threadID);
+};
+
+if ((event.body.toLowerCase() == "🧊")) {
+    return api.sendMessage("Aap thode thanda lag rahe ho 🧊", threadID);
+};
+
+if ((event.body.toLowerCase() == "⚡")) {
+    return api.sendMessage("Aap electric hai! ⚡", threadID);
+};
+
+if ((event.body.toLowerCase() == "👽")) {
+    return api.sendMessage("Kya aap alien ho? 👽", threadID);
+};
+
+if ((event.body.toLowerCase() == "🦧")) {
+    return api.sendMessage("Kya aapki dosti har kisam ke animals ke saath hai? 🦧", threadID);
+};
+
+if ((event.body.toLowerCase() == "💎")) {
+    return api.sendMessage("Aap toh diamond ki tarah chamak rahe ho! 💎", threadID);
+};
+
+if ((event.body.toLowerCase() == "🧘‍♂️") || (event.body.toLowerCase() == "🧘‍♀️")) {
+    return api.sendMessage("Yoga ka time hai! 🧘‍♀️", threadID);
+};
+
+if ((event.body.toLowerCase() == "🍀")) {
+    return api.sendMessage("Aapke paas lucky charm hai! 🍀", threadID);
+};
+
+if ((event.body.toLowerCase() == "🍫")) {
+    return api.sendMessage("Chocolate khane ka man hai 🍫", threadID);
+};
+
+if ((event.body.toLowerCase() == "🎻")) {
+    return api.sendMessage("Aap violin bajane ka mood mein ho! 🎻", threadID);
+};
+
+if ((event.body.toLowerCase() == "🎺")) {
+    return api.sendMessage("Aap trumpet bajane ka mood mein ho! 🎺", threadID);
+};
+
+if ((event.body.toLowerCase() == "🎻")) {
+    return api.sendMessage("Music mein doob gaye ho! 🎻", threadID);
+};
+
+if ((event.body.toLowerCase() == "🚴‍♂️") || (event.body.toLowerCase() == "🚴‍♀️")) {
+    return api.sendMessage("Cycle par jaana hai kya? 🚴‍♀️", threadID);
+};
+
+if ((event.body.toLowerCase() == "🧑‍🎤")) {
+    return api.sendMessage("Singer ban gaye ho kya? 🧑‍🎤", threadID);
+};
+
+if ((event.body.toLowerCase() == "🎧")) {
+    return api.sendMessage("Music ka shauq hai 🎧", threadID);
+};
+
+if ((event.body.toLowerCase() == "💬")) {
+    return api.sendMessage("Aap baat kar rahe ho? 💬", threadID);
+};
+
+if ((event.body.toLowerCase() == "🖋️")) {
+    return api.sendMessage("Kya likh rahe ho? 🖋️", threadID);
+};
+
+if ((event.body.toLowerCase() == "🧩")) {
+    return api.sendMessage("Puzzle solve kar rahe ho? 🧩", threadID);
+};
+
+if ((event.body.toLowerCase() == "🧃")) {
+    return api.sendMessage("Juice ka man ho raha hai! 🧃", threadID);
+};
+
+if ((event.body.toLowerCase() == "🎬")) {
+    return api.sendMessage("Koi movie dekh rahe ho? 🎬", threadID);
+};
+
+if ((event.body.toLowerCase() == "🦄")) {
+    return api.sendMessage("Aap unicorn ki tarah magical ho! 🦄", threadID);
+};
+
+if ((event.body.toLowerCase() == "🍒")) {
+    return api.sendMessage("Kya cherry ka shauq hai? 🍒", threadID);
+};
+
+if ((event.body.toLowerCase() == "🧠")) {
+    return api.sendMessage("Aapka dimag kitna tez hai! 🧠", threadID);
+};
+
+if ((event.body.toLowerCase() == "🥚")) {
+    return api.sendMessage("Egg khane ka man hai? 🥚", threadID);
+};
+
+if ((event.body.toLowerCase() == "⚽")) {
+    return api.sendMessage("Football ka shauq hai? ⚽", threadID);
+};
+
+if ((event.body.toLowerCase() == "🌙")) {
+    return api.sendMessage("Chand ki roshni mein kho gaye ho? 🌙", threadID);
+};
+
+if ((event.body.toLowerCase() == "🕹️")) {
+    return api.sendMessage("Video games mein busy ho? 🕹️", threadID);
+};
+
+if ((event.body.toLowerCase() == "🦉")) {
+    return api.sendMessage("Aap owl ki tarah sharp ho! 🦉", threadID);
+};
+
+if ((event.body.toLowerCase() == "🌻")) {
+    return api.sendMessage("Aap sunflower ki tarah bright ho! 🌻", threadID);
+};
+
+if ((event.body.toLowerCase() == "🧊")) {
+    return api.sendMessage("Kuch thanda chaiye? 🧊", threadID);
+};
+
+if ((event.body.toLowerCase() == "💀")) {
+    return api.sendMessage("Aap bilkul spooky lag rahe ho! 💀", threadID);
+};
+
+if ((event.body.toLowerCase() == "🏀")) {
+    return api.sendMessage("Basketball ka shauq hai? 🏀", threadID);
+};
+
+if ((event.body.toLowerCase() == "🎸")) {
+    return api.sendMessage("Guitar bajane ka man hai? 🎸", threadID);
+};
+
+if ((event.body.toLowerCase() == "🌍")) {
+    return api.sendMessage("Aap duniya ke safar par ho! 🌍", threadID);
+};
+
+  if ((event.body.toLowerCase() == "🍕")) {
+    return api.sendMessage("Pehli baat, pizza ka mood hai? 🍕", threadID);
+};
+
+if ((event.body.toLowerCase() == "🎮")) {
+    return api.sendMessage("Game khel rahe ho? 🎮", threadID);
+};
+
+if ((event.body.toLowerCase() == "🎨")) {
+    return api.sendMessage("Aap artist ban gaye ho? ??", threadID);
+};
+
+if ((event.body.toLowerCase() == "🌵")) {
+    return api.sendMessage("Kya desert mein ho? 🌵", threadID);
+};
+
+if ((event.body.toLowerCase() == "🍉")) {
+    return api.sendMessage("Fruits ka shauq hai 🍉", threadID);
+};
+
+if ((event.body.toLowerCase() == "🎻")) {
+    return api.sendMessage("Violin bajane ka mann hai 🎻", threadID);
+};
+
+if ((event.body.toLowerCase() == "🦄")) {
+    return api.sendMessage("Aap toh unicorn ho! 🦄", threadID);
+};
+
+if ((event.body.toLowerCase() == "🎷")) {
+    return api.sendMessage("Saxophone ka time hai! 🎷", threadID);
+};
+
+if ((event.body.toLowerCase() == "🍉")) {
+    return api.sendMessage("Aapko watermelon pasand hai? 🍉", threadID);
+};
+
+if ((event.body.toLowerCase() == "🎡")) {
+    return api.sendMessage("Ferris wheel par ho kya? 🎡", threadID);
+};
+
+if ((event.body.toLowerCase() == "🍀")) {
+    return api.sendMessage("Aapko good luck chahiye? 🍀", threadID);
+};
+
+if ((event.body.toLowerCase() == "🎂")) {
+    return api.sendMessage("Cake ka time hai! 🎂", threadID);
+};
+
+if ((event.body.toLowerCase() == "🛵")) {
+    return api.sendMessage("Scooter pe ja rahe ho? 🛵", threadID);
+};
+
+if ((event.body.toLowerCase() == "🍪")) {
+    return api.sendMessage("Cookies ka time hai! 🍪", threadID);
+};
+
+if ((event.body.toLowerCase() == "🦓")) {
+    return api.sendMessage("Zebra ki tarah unique ho aap! 🦓", threadID);
+};
+
+if ((event.body.toLowerCase() == "🎃")) {
+    return api.sendMessage("Aap Halloween mode mein lag rahe ho! 🎃", threadID);
+};
+
+if ((event.body.toLowerCase() == "🐉")) {
+    return api.sendMessage("Aap dragon ban gaye ho! 🐉", threadID);
+};
+
+if ((event.body.toLowerCase() == "🦩")) {
+    return api.sendMessage("Flamingo ban gaya hai koi! 🦩", threadID);
+};
+
+if ((event.body.toLowerCase() == "💌")) {
+    return api.sendMessage("Dil se kuch bhejna hai? 💌", threadID);
+};
+
+if ((event.body.toLowerCase() == "🥳")) {
+    return api.sendMessage("Celebration ka time hai! 🥳", threadID);
+};
+
+if ((event.body.toLowerCase() == "🎮")) {
+    return api.sendMessage("Game khel rahe ho? 🎮", threadID);
+};
+
+if ((event.body.toLowerCase() == "🍍")) {
+    return api.sendMessage("Pineapple ka shauq hai? 🍍", threadID);
+};
+
+if ((event.body.toLowerCase() == "🦋")) {
+    return api.sendMessage("Aap butterfly ki tarah khubsurat ho! 🦋", threadID);
+};
+
+if ((event.body.toLowerCase() == "🎺")) {
+    return api.sendMessage("Trumpet bajana hai! 🎺", threadID);
+};
+
+if ((event.body.toLowerCase() == "🍓")) {
+    return api.sendMessage("Strawberry ka time hai! 🍓", threadID);
+};
+
+if ((event.body.toLowerCase() == "💎")) {
+    return api.sendMessage("Aap diamond ki tarah chamak rahe ho! 💎", threadID);
+};
+
+if ((event.body.toLowerCase() == "🥥")) {
+    return api.sendMessage("Coconut ka shauq hai? 🥥", threadID);
+};
+
+if ((event.body.toLowerCase() == "🦒")) {
+    return api.sendMessage("Giraffe ban gaya koi! 🦒", threadID);
+};
+
+if ((event.body.toLowerCase() == "🍒")) {
+    return api.sendMessage("Cherry khane ka mann hai? 🍒", threadID);
+};
+
+if ((event.body.toLowerCase() == "🦓")) {
+    return api.sendMessage("Zebra ki tarah unique lag rahe ho! 🦓", threadID);
+};
+
+if ((event.body.toLowerCase() == "🐢")) {
+    return api.sendMessage("Aap turtle ki tarah slow aur steady ho! 🐢", threadID);
+};
+
+if ((event.body.toLowerCase() == "🧸")) {
+    return api.sendMessage("Aap teddy bear ki tarah pyare ho! 🧸", threadID);
+};
+
+if ((event.body.toLowerCase() == "🍓")) {
+    return api.sendMessage("Aapko strawberries pasand hai? 🍓", threadID);
+};
+
+if ((event.body.toLowerCase() == "🎸")) {
+    return api.sendMessage("Guitar bajana hai kya? 🎸", threadID);
+};
+
+if ((event.body.toLowerCase() == "🦅")) {
+    return api.sendMessage("Eagle ki tarah upar ud rahe ho! 🦅", threadID);
+};
+
+if ((event.body.toLowerCase() == "💥")) {
+    return api.sendMessage("Explosion hone wala hai! 💥", threadID);
+};
+
+if ((event.body.toLowerCase() == "🐘")) {
+    return api.sendMessage("Aap elephant ki tarah strong ho! 🐘", threadID);
+};
+
+if ((event.body.toLowerCase() == "🍟")) {
+    return api.sendMessage("Fries ka mood hai? 🍟", threadID);
+};
+
+if ((event.body.toLowerCase() == "🧊")) {
+    return api.sendMessage("Thanda kuch chahiye? 🧊", threadID);
+};
+
+if ((event.body.toLowerCase() == "🎬")) {
+    return api.sendMessage("Film dekh rahe ho? 🎬", threadID);
+};
+
+if ((event.body.toLowerCase() == "🍾")) {
+    return api.sendMessage("Celebration ka time hai! 🍾", threadID);
+};
+
+if ((event.body.toLowerCase() == "🎤")) {
+    return api.sendMessage("Aap singer ban gaye ho! 🎤", threadID);
+};
+
+if ((event.body.toLowerCase() == "🦸‍♂️") || (event.body.toLowerCase() == "🦸‍♀️")) {
+    return api.sendMessage("Superhero lag rahe ho! 🦸‍♂️", threadID);
+};
+
+if ((event.body.toLowerCase() == "🍔")) {
+    return api.sendMessage("Burger khane ka mood hai? 🍔", threadID);
+};
+
+if ((event.body.toLowerCase() == "🦶")) {
+    return api.sendMessage("Aapko chalna ka shauq hai? 🦶", threadID);
+};
+
+if ((event.body.toLowerCase() == "🍿")) {
+    return api.sendMessage("Movie time! Popcorn le lo 🍿", threadID);
+};
+
+if ((event.body.toLowerCase() == "🦗")) {
+    return api.sendMessage("Grasshopper ki tarah jump kar rahe ho! 🦗", threadID);
+};
+
+if ((event.body.toLowerCase() == "🧃")) {
+    return api.sendMessage("Juice ka time hai! 🧃", threadID);
+};
+
+if ((event.body.toLowerCase() == "🎪")) {
+    return api.sendMessage("Circus ka maza le rahe ho? 🎪", threadID);
+};
+
+if ((event.body.toLowerCase() == "🥑")) {
+    return api.sendMessage("Avocado ka shauq hai? 🥑", threadID);
+};
+  
    mess = "{name}"
   
   if (event.body.indexOf("Bot") == 0 || (event.body.indexOf("bot") == 0)) {
-    var msg = {
-      body: `${name}, ${rand}`
-    }
-    return api.sendMessage(msg, threadID, messageID);
+ var msg = {
+  body: `╭──────╯🌙╰──────╮
+✨ 𝐇𝐞𝐲 ${name}, 𝐇𝐨𝐩𝐞 𝐘𝐨𝐮'𝐫𝐞 𝐆𝐨𝐨𝐝! ✨
+╰──────╮💫╭──────╯
+
+🎐 𝑭𝒆𝒆𝒍 𝑻𝒉𝒊𝒔:
+『 “${rand}” 』
+
+༆ 𝑾𝒐𝒓𝒅𝒔 𝒕𝒉𝒂𝒕 𝒕𝒐𝒖𝒄𝒉 𝒉𝒆𝒂𝒓𝒕𝒔... ☁️
+
+⟬  𝗦A͜͡𝗥𝗗A͜͡𝗥ྂྂ«𝗥D͜͡𝗫⟭`
+};
+
+return api.sendMessage(msg, threadID, messageID);
   };
 
 }
