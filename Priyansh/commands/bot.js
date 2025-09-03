@@ -3,7 +3,7 @@ module.exports.config = {
   name: "goibot",
   version: "1.0.1",
   hasPermssion: 0,
-  credits: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭",
+  credits: "𝐕𝐈𝐈𝐇𝐀𝐍 𝐑𝐃𝐗",
   description: "goibot",
   commandCategory: "Noprefix",
   usages: "noprefix",
@@ -877,7 +877,7 @@ if ((event.body.toLowerCase() == "🥑")) {
 
 ༆ 𝑾𝒐𝒓𝒅𝒔 𝒕𝒉𝒂𝒕 𝒕𝒐𝒖𝒄𝒉 𝒉𝒆𝒂𝒓𝒕𝒔... ☁️
 
-⟬  𝗦A͜͡𝗥𝗗A͜͡𝗥ྂྂ«𝗥D͜͡𝗫⟭`
+⟬  ❤⎯͢⎯⃝𝐕𝐈𝐈𝐇𝐀𝐍 𝐑𝐃𝐗⎯͢⎯⃝💚`
 };
 
 return api.sendMessage(msg, threadID, messageID);
