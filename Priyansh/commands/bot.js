@@ -3,7 +3,7 @@ module.exports.config = {
   name: "goibot",
   version: "1.0.1",
   hasPermssion: 0,
-  credits: "𝐕𝐈𝐈𝐇𝐀𝐍 𝐑𝐃𝐗",
+  credits: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭",
   description: "goibot",
   commandCategory: "Noprefix",
   usages: "noprefix",
@@ -107,7 +107,7 @@ if ([
     return api.sendMessage("Hyeee, I miss you too! SuChi kia karun, ID issue aa jata hai is liye mujhe new ID banne ka wait karna padta hai. Jab new ID banti hai, to owner mujhe add kar deta hai. 😅", threadID);
 }
  if ([
-    "bot kis na add kiya", 
+    "Bot kis na add kiya", 
     "bot kisne add kiya", 
     "bot kis ne add kiya", 
     "bot ko kisne add kiya",
@@ -161,22 +161,22 @@ if ([
      return api.sendMessage("Main Hun Naw Jaaneman ❤️", threadID);
    };
 
-   if ((event.body.toLowerCase() == "priyansh") || (event.body.toLowerCase() == "mohd faisal") || (event.body.toLowerCase() == "Mohd Faisal") || (event.body.toLowerCase() == "Saim")) {
+   if ((event.body.toLowerCase() == "Mohd Faisal") || (event.body.toLowerCase() == "mohd faisal") || (event.body.toLowerCase() == "saim") || (event.body.toLowerCase() == "")) {
      return api.sendMessage( "Busy HoGa Work Me Main t0o Hun Naw 😘",threadID);
 
        
    };
 
    if ((event.body.toLowerCase() == "owner") || (event.body.toLowerCase() == "Owner")) {
-     return api.sendMessage("💝🥀𝐎𝐖𝐍𝐄𝐑:- ☞꧁𝐕𝐈𝐈𝐇𝐀𝐍 𝐑𝐃𝐗꧂☜ 💫\n🖤𝚈𝚘𝚞 𝙲𝚊𝚗 𝙲𝚊𝚕𝚕 𝙷𝚒𝚖 𝐕𝐈𝐈𝐇𝐀𝐍 🖤\n😳𝐇𝐢𝐬 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝🤓:- ☞https://www.facebook.com/shajeb.ali.739745 \n👋For Any Kind Of Help Contact On Telegram  Username 👉 @𝐕𝐈𝐈𝐇𝐀𝐍 𝐑𝐃𝐗😇", threadID);
+     return api.sendMessage("💝🥀𝐎𝐖𝐍𝐄𝐑:- ☞꧁𝐕𝐈𝐈𝐇𝐀𝐍-𝐑𝐃𝐗꧂☜ 💫\n🖤𝚈𝚘𝚞 𝙲𝚊𝚗 𝙲𝚊𝚕𝚕 𝙷𝚒𝚖 𝐕𝐈𝐈𝐇𝐀𝐍🖤\n😳𝐇𝐢𝐬 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝🤓:- ☞https://www.facebook.com/shajeb.ali.739745 \n👋For Any Kind Of Help Contact On Telegram  Username 👉 @viihanrdx😇", threadID);
    };
 
    if ((event.body.toLowerCase() == "tumhe banaya kon hai") || (event.body.toLowerCase() == "tumko banaya kisne")) {
-     return api.sendMessage("Viihan jii  ❤️ My Creator. He loves me & Edit Me Daily. Ye Bot Sirf Owner k Liye h. Mujhe Aap logo ko Hasane k liye banya gya h Toh Muh Ladkaye Mat Rakkha Karo. Har Waqt Haste Raho.", threadID);
+     return api.sendMessage("Zaini jutt  ❤️ My Creator. He loves me & Edit Me Daily. Ye Bot Sirf Owner k Liye h. Mujhe Aap logo ko Hasane k liye banya gya h Toh Muh Ladkaye Mat Rakkha Karo. Har Waqt Haste Raho.", threadID);
    };
 
   if ((event.body.toLowerCase() == "bot admin") || (event.body.toLowerCase() == "bot ka admin kon ha")) {
-     return api.sendMessage("He is viihan. He Gives his name viihan everywhare", threadID);
+     return api.sendMessage("He is zain. He Gives his name zain everywhare", threadID);
    };
 
    if ((event.body.toLowerCase() == "shadi karoge") || (event.body.toLowerCase() == "mujhse shadi karoge?")) {
@@ -191,7 +191,7 @@ if ([
      return api.sendMessage("Tu H Btc. Bhos DK", threadID);
    };
 
-   if ((event.body.toLowerCase() == "malik se bakchodi") || (event.body.toLowerCase() == "Turk se backchodi") || (event.body.toLowerCase() == "malkin se bakchodi") || (event.body.toLowerCase() == "malkin se backchodi")) {
+   if ((event.body.toLowerCase() == "malik se bakchodi") || (event.body.toLowerCase() == "malik se backchodi") || (event.body.toLowerCase() == "malkin se bakchodi") || (event.body.toLowerCase() == "malkin se backchodi")) {
      return api.sendMessage("srry malik maaf kr do ab nhi kruga 🥺🙏", threadID);
    };
 
@@ -207,7 +207,7 @@ if ([
      return api.sendMessage("️M hu hi itni Accha. sab log Tarref karte hai meri.", threadID);
    };
 
-   if ((event.body.toLowerCase() == "😡😡😡") || (event.body.toLowerCase() == "😤") || (event.body.toLowerCase() == "😠") || (event.body.toLowerCase() == "🤬") || (event.body.toLowerCase() == "😾")) {
+   if ((event.body.toLowerCase() == "😡😡😡") || (event.body.toLowerCase() == "😡😡") || (event.body.toLowerCase() == "😠") || (event.body.toLowerCase() == "🤬") || (event.body.toLowerCase() == "😾")) {
      return api.sendMessage("️🥺 M toh Sirf Mazak Kr Rha Tha🥺. Gussa Mat Karo. Ek Chummi Lo aur Shant Raho 😘", threadID);
    };
 
@@ -268,7 +268,7 @@ if ([
      return api.sendMessage("️Are are lips kaha gaye gf/bf ke sath kiss karte time usi ne to nahi kha liye 😜😜", threadID);
    };
 
-  if ((event.body.toLowerCase() == "🙄🙄") || (event.body.toLowerCase() == "😉")) {
+  if ((event.body.toLowerCase() == "😉") || (event.body.toLowerCase() == "😉")) {
      return api.sendMessage("️Aankh kyu maar rahe ho, Me bahut shareef hu🥺", threadID);
    };
 
@@ -276,10 +276,8 @@ if ([
      return api.sendMessage("️Kya huva bhoot dekh liya kya 👻👻", threadID);
    };
   
-  if ((event.body.toLowerCase() == "🙄🙄") || (event.body.toLowerCase() == "🙄")) {
-     return api.sendMessage("️️꧁•🦋✨🍁❉‌‌্᭄...─┼
-〘up᩶ɑ̽ɽ ɳɑ̽ɧi͠ ɳɘɘc̬̽ɧɘ ̊͢ɗɘƙɧ 𝗌ʌɱɳɘ ɧu ɱɘɽi͠ ʝɑ̽ɑ̽ŋ͢〙
-💚⟶‌‌𓆩〭〬༎🐰❉‌‌্᭄...꧂", threadID);
+  if ((event.body.toLowerCase() == "😒") || (event.body.toLowerCase() == "🙄")) {
+     return api.sendMessage("️️𝐓𝐢𝐫𝐜𝐡𝐢 𝐧𝐚𝐳𝐚𝐫𝐢𝐲𝐚 𝐦𝐨𝐫𝐢 𝐡𝐚𝐚𝐲𝐞 𝐡𝐚𝐚𝐲𝐞 𝐡𝐚𝐚𝐲𝐞 🙈", threadID);
    };
 
    if ((event.body.toLowerCase() == "nobody loves me") || (event.body.toLowerCase() == "nobody love me") || (event.body.toLowerCase() == "koi pyar nhi karta")) {
@@ -290,11 +288,11 @@ if ([
      return api.sendMessage("Are apne muh pe kyu maar rahe ho, Mujhe batao kya huva?😬", threadID);
    };
    
-   if ((event.body.toLowerCase() == "😂😂") || (event.body.toLowerCase() == "🤣🤣🤣") || (event.body.toLowerCase() == "😆") || (event.body.toLowerCase() == "🤣") || (event.body.toLowerCase() == "😸") || (event.body.toLowerCase() == "😹")) {
+   if ((event.body.toLowerCase() == "😂") || (event.body.toLowerCase() == "😁") || (event.body.toLowerCase() == "😆") || (event.body.toLowerCase() == "🤣") || (event.body.toLowerCase() == "😸") || (event.body.toLowerCase() == "😹")) {
      return api.sendMessage("Enni hasi kyu aa rahi hai🤣, Es hasi ke piche ka raaz kya hai batao", threadID);
    };
 
-   if ((event.body.toLowerCase() == "😍😘🥰") || (event.body.toLowerCase() == "😍😍") || (event.body.toLowerCase() == "😻") || (event.body.toLowerCase() == "❤️")) {
+   if ((event.body.toLowerCase() == "🥰") || (event.body.toLowerCase() == "😍") || (event.body.toLowerCase() == "😻") || (event.body.toLowerCase() == "❤️")) {
      return api.sendMessage("🦋🌿Aƞƙɧ❍ Ɱɛ Ƥɣɑɽ͢  Ɗɪɭɱɛ Ƙɧuɱɑɽ🌬️🌍 ••Ƥɣɑɽ Ƭ❍ɧ Ƞɧɪ Ƙɒɽ ɭɪɣɑ Ɱuȷɧʂɛ>³••🕊️🍎😍", threadID);
    };
 
@@ -870,16 +868,17 @@ if ((event.body.toLowerCase() == "🥑")) {
   
   if (event.body.indexOf("Bot") == 0 || (event.body.indexOf("bot") == 0)) {
  var msg = {
-  body: `╭──────╯🌙╰──────╮
-✨ 𝐇𝐞𝐲 ${name}, 𝐇𝐨𝐩𝐞 𝐘𝐨𝐮'𝐫𝐞 𝐆𝐨𝐨𝐝! ✨
-╰──────╮💫╭──────╯
+  body: `╭────༺❄️༻────╮
+      ❄️ BOT ❄️
+╰────༺❄️༻────╯
 
-🎐 𝑭𝒆𝒆𝒍 𝑻𝒉𝒊𝒔:
-『 “${rand}” 』
-
-༆ 𝑾𝒐𝒓𝒅𝒔 𝒕𝒉𝒂𝒕 𝒕𝒐𝒖𝒄𝒉 𝒉𝒆𝒂𝒓𝒕𝒔... ☁️
-
-⟬  ❤⎯͢⎯⃝𝐕𝐈𝐈𝐇𝐀𝐍 𝐑𝐃𝐗⎯͢⎯⃝💚`
+╔════════════════╗
+║ 👤 NAME: 『 ${name} 』     
+║                        
+║ ❝ ${rand} ❞
+║                        
+║ 👑 OWNER: 𒁍≛⃝𝐕𝐢𝐢𝐡𝐚𝐧 𝐑𝐝𝐱😈
+╚════════════════╝`
 };
 
 return api.sendMessage(msg, threadID, messageID);
