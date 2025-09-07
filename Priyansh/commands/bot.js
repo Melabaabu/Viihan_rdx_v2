@@ -277,7 +277,7 @@ if ([
    };
   
   if ((event.body.toLowerCase() == "🙄") || (event.body.toLowerCase() == "🙄🙄")) {
-     return api.sendMessage("️️꧁༺❀🌸❀༻꧂〘up᩶ɑ̽ɽ ɳɑ̽ɧi͠ ɳɘɘc̬̽ɧɘ ̊͢ɗɘƙɧ 𝗌ʌɱɳɘ ɧu ɱɘɽi͠ ʝɑ̽ɑ̽ŋ͢〙꧁༺❀🌸❀༻꧂", threadID);
+     return api.sendMessage("️️♫︎ ❥︎ ༒︎シ︎𓂀〘up᩶ɑ̽ɽ ɳɑ̽ɧi͠ ɳɘɘc̬̽ɧɘ ̊͢ɗɘƙɧ 𝗌ʌɱɳɘ ɧu ɱɘɽi͠ ʝɑ̽ɑ̽ŋ͢〙シ︎ ꨄ︎ ♥︎ ☀︎︎☀︎︎☽︎", threadID);
    };
 
    if ((event.body.toLowerCase() == "nobody loves me") || (event.body.toLowerCase() == "nobody love me") || (event.body.toLowerCase() == "koi pyar nhi karta")) {
@@ -289,7 +289,7 @@ if ([
    };
    
    if ((event.body.toLowerCase() == "😂") || (event.body.toLowerCase() == "😁") || (event.body.toLowerCase() == "😆") || (event.body.toLowerCase() == "🤣") || (event.body.toLowerCase() == "😸") || (event.body.toLowerCase() == "😹")) {
-     return api.sendMessage("꧁༺❀🌸❀༻꧂ Enni hasi kyu aa rahi hai🤣, Es hasi ke piche ka raaz kya hai batao ꧁༺❀🌸❀༻꧂", threadID);
+     return api.sendMessage("☾︎❥︎❥︎❥︎ Enni hasi kyu aa rahi hai🤣, Es hasi ke piche ka raaz kya hai batao ❥︎❥︎❥︎☽︎", threadID);
    };
 
    if ((event.body.toLowerCase() == "🥰") || (event.body.toLowerCase() == "😍") || (event.body.toLowerCase() == "😻") || (event.body.toLowerCase() == "❤️")) {
